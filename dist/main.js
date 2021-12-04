@@ -14,8 +14,8 @@ const englishToMorse = (e) => {
   e.preventDefault();
 
   let text = input.value;
-  let arr1 = text.toUpperCase().split("");
-  let codeInMorse = englishEncoder(arr1);
+  let string = englishEncoder(text);
+  let codeInMorse = string;
   morseOutput.value = codeInMorse;
 
   //Remove text and be Ready for the next input
@@ -29,7 +29,7 @@ const morseToEnglish = (e) => {
   let text = input2.value;
   let codeInEnglish = morseCodeDecoder(text);
   englishOutput.value = codeInEnglish;
-
+  console.log(codeInEnglish);
   //Remove text and be Ready for the next input2
   input2.value = " ";
 };

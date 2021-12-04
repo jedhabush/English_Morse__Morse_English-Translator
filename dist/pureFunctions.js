@@ -2,8 +2,10 @@ import { englishMapping, morseCodeMapping } from "./englishMorseList.js";
 export { englishEncoder, morseCodeDecoder };
 
 //function to encode text to morse code
-const englishEncoder = (arr) => {
-  let arr2 = arr
+const englishEncoder = (str) => {
+  if (/[.-]/gi.test(str)) return "Not Valid Input";
+  let array = str.toUpperCase().split("");
+  let string = array
     .map((x) => {
       if (englishMapping[x]) {
         console.log(englishMapping[x]);
@@ -14,12 +16,13 @@ const englishEncoder = (arr) => {
     })
     .join(" ");
 
-  return arr2;
+  return string;
 };
 
 //function to decode morse code to english
-const morseCodeDecoder = (arr) => {
-  let arr1 = arr.split("   ");
+const morseCodeDecoder = (str) => {
+  if (/[a-z]/gi.test(str)) return "Not Valid Input";
+  let arr1 = str.split("   ");
 
   let arr2 = arr1
     .map((a) =>
