@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>English & Morse Translator</title>
+  </head>
+  <script type="module" src="main.js"></script>
+  <link rel="stylesheet" href="css/main.css" />
+
+  <body>
+    <h1>English to Morse Code</h1>
+
+    <hr />
+
+    <div class="english-container">
+      <div>
+        <b>English Input</b><br />
+        <textarea
+          id="englishInput"
+          cols="50"
+          rows="20"
+          placeholder="Enter your English text"
+        ></textarea>
+      </div>
+
+      <button class="englishToMorse btn btn-md px-3 btn-outline-dark">
+        Translate to Morse Code
+      </button>
+
+      <div>
+        <b>Morse Code Output</b><br />
+        <textarea id="morseOutput" cols="50" rows="20"></textarea>
+      </div>
+    </div>
+    <h1>Morse Code to English</h1>
+
+    <hr />
+
+    <div class="morse-container">
+      <!-- Morse to English -->
+      <div class="morse-container__input">
+        <b>Morse Code Input</b><br />
+        <textarea
+          id="morseInput"
+          cols="50"
+          rows="20"
+          placeholder="Enter your Morse Code"
+        ></textarea>
+      </div>
+
+      <button class="morseToEnglish btn btn-md px-3 btn-outline-dark">
+        Translate to English
+      </button>
+
+      <div>
+        <b>English Output</b><br />
+        <textarea id="englishOutput" cols="50" rows="20"></textarea>
+      </div>
+    </div>
+  </body>
+</html>
