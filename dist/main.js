@@ -1,13 +1,23 @@
-import { englishEncoder, morseCodeDecoder } from "./pureFunctions.js";
+import {
+  englishEncoder,
+  morseCodeDecoder,
+  morseCodeSoundGenerator,
+} from "./pureFunctions.js";
 
 //Elements for English content
 let input = document.querySelector("#englishInput");
-let morseOutput = document.getElementById("morseOutput");
+let morseOutput = document.querySelector("#morseOutput");
 const btnConvert = document.querySelector(".englishToMorse");
-//Elements for Morse Code
+
+//Elements for Morse Code content
 let input2 = document.querySelector("#morseInput");
-let englishOutput = document.getElementById("englishOutput");
+let englishOutput = document.querySelector("#englishOutput");
 const btnConvert2 = document.querySelector(".morseToEnglish");
+
+//Element for Morse Code sound player
+const playMorseCodeSound = document.querySelector("#morseCodePlayer");
+
+// Functions Section
 
 //English to Morse function
 const englishToMorse = (e) => {
@@ -19,7 +29,7 @@ const englishToMorse = (e) => {
   morseOutput.value = codeInMorse;
 
   //Remove text and be Ready for the next input
-  input.value = " ";
+  input.value = "";
 };
 
 //Morse to English function
@@ -31,13 +41,16 @@ const morseToEnglish = (e) => {
   englishOutput.value = codeInEnglish;
   console.log(codeInEnglish);
   //Remove text and be Ready for the next input2
-  input2.value = " ";
+  input2.value = "";
 };
 
-// Event Listeners
+// Event Listeners Section
 
 // Event for English to Morse
 btnConvert.addEventListener("click", englishToMorse);
-console.log(btnConvert);
+
 // Event for Morse to English
 btnConvert2.addEventListener("click", morseToEnglish);
+
+// Event to play Morse Code sound
+playMorseCodeSound.addEventListener("click", morseCodeSoundGenerator);
