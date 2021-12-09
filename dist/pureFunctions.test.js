@@ -36,11 +36,9 @@ describe("Testing englishEncoder()", () => {
     );
   });
   it("Should NOT convert any non Morse Symbols", () => {
-    expect(englishEncoder("++*")).toEqual("+ + *");
+    expect(englishEncoder("++*")).toEqual("Not Valid Input");
     expect(englishEncoder("////////")).toEqual("/ / / / / / / /");
-    expect(englishEncoder("2 + 2 = 4")).toEqual(
-      "..---   +   ..---   =   ....-"
-    );
+    expect(englishEncoder("2 + 2 = 4")).toEqual("Not Valid Input");
   });
 
   it("Should be invalid input, if input is non English character", () => {
@@ -93,8 +91,8 @@ describe("Testing morseCodeDecoder()", () => {
   });
 
   it("Should NOT convert any non Morse Symbols", () => {
-    expect(morseCodeDecoder("++*")).toEqual("");
-    expect(morseCodeDecoder("2 + 2 = 4")).toEqual("");
+    expect(morseCodeDecoder("++*")).toEqual("Not Valid Input");
+    expect(morseCodeDecoder("2 + 2 = 4")).toEqual("Not Valid Input");
   });
   it("Should convert any slashes in Morse Symbols correctly", () => {
     expect(

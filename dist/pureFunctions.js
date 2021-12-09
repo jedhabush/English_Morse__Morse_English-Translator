@@ -3,7 +3,7 @@ export { englishEncoder, morseCodeDecoder };
 
 //function to encode English text to morse code
 const englishEncoder = (str) => {
-  if (/[.-]/gi.test(str)) return "Not Valid Input";
+  if (!/^[0-9a-zA-Z\ \!\.\,\\\/]+$/gi.test(str)) return "Not Valid Input";
   let array = str.toUpperCase().split("");
   let string = array
     .map((x) => {
@@ -22,7 +22,7 @@ const englishEncoder = (str) => {
 //function to decode morse code to English
 const morseCodeDecoder = (str) => {
   //Check str validality
-  if (/[a-z]/gi.test(str)) return "Not Valid Input";
+  if (!/^[\ \!\.\\\/\-]+$/gi.test(str)) return "Not Valid Input";
   //check if str contains forward slash (/)
   let strChecked = str;
   if (/[/]/gi.test(str)) {
