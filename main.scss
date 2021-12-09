@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(224, 222, 222);
+}
+
+.english-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.morseToEnglish,
+.englishToMorse {
+  margin: 10px;
+  padding: 10px 25px;
+  background-color: lightblue;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  &:hover {
+    background-color: rgb(23, 123, 160);
+  }
+}
+.morse-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+h1 {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+h2 {
+  font-family: cursive;
+}
+h3 {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  background-color: lightblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.area {
+  margin-right: 25px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+
+.player-button {
+  padding: 5px 10px;
+  margin-top: 5px;
+  background-color: rgb(153, 108, 155);
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: rgb(139, 73, 143);
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
