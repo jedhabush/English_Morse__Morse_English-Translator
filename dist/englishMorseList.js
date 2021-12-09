@@ -41,6 +41,8 @@ const englishMapping = {
   "!": "-.-.--",
   ".": ".-.-.-",
   ",": "--··--",
+  "?": "..--..",
+  "&": ".-...",
 };
 //Morse Code Mapping
 const morseCodeMapping = {
@@ -83,4 +85,6 @@ const morseCodeMapping = {
   "-.-.--": "!",
   ".-.-.-": ".",
   "--··--": ",",
+  "..--..": "?",
+  ".-...": "&",
 };
