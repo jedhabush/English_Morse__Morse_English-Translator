@@ -3,6 +3,7 @@ export { englishEncoder, morseCodeDecoder };
 
 //function to encode English text to morse code
 const englishEncoder = (str) => {
+  //Check str validality
   if (!/^[0-9a-zA-Z\ \!\.\,\\\/]+$/gi.test(str)) return "Not Valid Input";
   let array = str.toUpperCase().split("");
   let string = array
