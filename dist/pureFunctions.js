@@ -8,7 +8,6 @@ const englishEncoder = (str) => {
   let string = array
     .map((x) => {
       if (englishMapping[x]) {
-        console.log(englishMapping[x]);
         return englishMapping[x];
       } else {
         return x;
