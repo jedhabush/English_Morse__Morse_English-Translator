@@ -1,5 +1,6 @@
 export { englishMapping, morseCodeMapping };
 
+//English Letters Mapping
 const englishMapping = {
   A: ".-",
   B: "-...",
@@ -39,7 +40,7 @@ const englishMapping = {
   8: "---..",
   9: "----.",
 };
-//Morse Code MApping
+//Morse Code Mapping
 const morseCodeMapping = {
   ".-": "a",
   "-...": "b",

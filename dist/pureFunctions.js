@@ -1,9 +1,11 @@
 import { englishMapping, morseCodeMapping } from "./englishMorseList.js";
 export { englishEncoder, morseCodeDecoder };
 
-//function to encode text to morse code
-const englishEncoder = (arr) => {
-  let arr2 = arr
+//function to encode English text to morse code
+const englishEncoder = (str) => {
+  if (/[.-]/gi.test(str)) return "Not Valid Input";
+  let array = str.toUpperCase().split("");
+  let string = array
     .map((x) => {
       if (englishMapping[x]) {
         console.log(englishMapping[x]);
@@ -14,12 +16,20 @@ const englishEncoder = (arr) => {
     })
     .join(" ");
 
-  return arr2;
+  return string;
 };
 
-//function to decode morse code to english
-const morseCodeDecoder = (arr) => {
-  let arr1 = arr.split("   ");
+//function to decode morse code to English
+const morseCodeDecoder = (str) => {
+  //Check str validality
+  if (/[a-z]/gi.test(str)) return "Not Valid Input";
+  //check if str contains forward slash (/)
+  let strChecked = str;
+  if (/[/]/gi.test(str)) {
+    strChecked = str.replace(/[/]/g, " ");
+  }
+  //str passed all checks proceed with translation
+  let arr1 = strChecked.split("   ");
 
   let arr2 = arr1
     .map((a) =>
