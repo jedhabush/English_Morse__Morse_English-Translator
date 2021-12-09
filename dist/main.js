@@ -36,7 +36,6 @@ const morseToEnglish = (e) => {
   let text = input2.value;
   let codeInEnglish = morseCodeDecoder(text);
   englishOutput.value = codeInEnglish;
-  console.log(codeInEnglish);
   //Remove text and be Ready for the next input2
   input2.value = "";
 };
