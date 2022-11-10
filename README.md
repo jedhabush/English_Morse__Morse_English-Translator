@@ -20,7 +20,7 @@ I had few ideas on how to approach this project. The first idea, was to utilize 
 - DOM manipulation
 
 ### Challenges
-- Although , the project MVP was straight forward yet , I wanted to challange myself and add a cool feature that I considered to be crusial which is the ability to listen to Morse code. Morse code are usually audible. The challange was to produce an audio when the button is pressed. I made an extensive reasearch on how to utilize the audio feature in JS and I managed to tweak the code in order to achieve the intended purpose.
+- Although , the project MVP was straight forward yet , I wanted to challange myself and add a cool feature that I considered to be crusial which is the ability to listen to Morse code. Morse codes are usually audible. The challange was to produce an audio when the button is pressed. I made an extensive reasearch on how to utilize the audio feature in JS and I managed to tweak the code in order to achieve the intended purpose.
 
 ## Futrue Improvements
 - Fix and enhance user interface 
