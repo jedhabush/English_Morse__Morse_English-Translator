@@ -11,14 +11,15 @@ I had few ideas on how to approach this project. The first idea, was to utilize 
 - HTML
 - CSS
 - Media player function
+- DOM manipulation
 
 ### Challenges
 - Although , the project MVP was straight forward yet , I wanted to challange myself and add a cool feature that I considered to be crusial which is the ability to listen to Morse code. Morse code are usually audible. The challange was to produce an audio when the button is pressed. I made an extensive reasearch on how to utilize the audio feature in JS and I managed to tweak the code in order to achieve the intended purpose.
 
 ## Futrue Improvements
-- The ability to convert English sentences to Morse code
-- The ability to convert Morse code scripts to English
-- The ability to listen to Morse code sound
+- Fix and enhance user interface 
+- Develop an API as the backbone of the project
+
 
 # Live Version 
 https://morse-code-to-english-english-to-morse-code-translator.netlify.app/
