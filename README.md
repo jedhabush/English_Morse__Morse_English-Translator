@@ -1,3 +1,9 @@
+# Live Version 
+https://morse-code-to-english-english-to-morse-code-translator.netlify.app/
+
+# Image of application
+![alt text](https://github.com/jedhabush/English_Morse__Morse_English-Translator/blob/main/Eng-Morse-IMG.png)
+
 # English_Morse__Morse_English-Translator
 I had few ideas on how to approach this project. The first idea, was to utilize an existent API. I figured I could retrieve/filter the desired data from an API which would reduce the amount of work and it would be easier to maintain. However, I could not find a reliable free API that allows multiple requests and that led me to a second idea. The second idea, create my own API resource then use it as the backbone of the project. However, it did require an extensive research to develop such an API and due to the time constraint, it was not feasible. The third and last idea, was to create a list/dictionary of both English and Morse code letters/numbers then utilize Map() to produce the correct result. 
 
@@ -21,8 +27,4 @@ I had few ideas on how to approach this project. The first idea, was to utilize 
 - Develop an API as the backbone of the project
 
 
-# Live Version 
-https://morse-code-to-english-english-to-morse-code-translator.netlify.app/
 
-# Image of application
-![alt text](https://github.com/jedhabush/English_Morse__Morse_English-Translator/blob/main/Eng-Morse-IMG.png)
