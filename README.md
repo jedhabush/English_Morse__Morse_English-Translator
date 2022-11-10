@@ -9,7 +9,7 @@ I had few ideas on how to approach this project. The first idea, was to utilize 
 ## Tech stack
 - Javascript 
 - HTML
-- CSS
+- SCSS
 - Media player function
 - DOM manipulation
 
